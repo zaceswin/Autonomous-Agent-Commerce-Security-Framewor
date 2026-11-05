@@ -20,3 +20,8 @@ allow {
     input.tool == "refund_api"
     input.method == "POST"
 }
+allow {
+    input.role == "shopping_agent"
+    input.tool == "wallet_authorize"
+    input.method == "POST"
+}
